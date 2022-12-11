@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name:"viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latian1</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-size: 15px;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            border: 5px solid black;
+            box-sizing: border-box;
+            padding: 5px;
+            margin: 0px auto;
+            position: relativ;
+            margin: 20px;
+        }
+
+        .header {
+            width: 100%;
+            height: 85px;
+            background-color: purple;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        .content {
+            width: 100%;
+        }
+
+        .footer {
+            width: 100%;
+            height: 40px;
+            background-color: black;
+        }
+
+        .side div {
+            width: 40%;
+        }
+
+        div.aside {
+            /* width: 40%;*/
+            height: 100px;
+            background-color: blue;
+        }
+
+        div.nav {
+            /* width: 40%;*/
+            height: 150px;
+            background-color: red;
+        }
+
+        div.main {
+            width: 60%;
+            height: 250px;
+            background-color: orange;
+            float: right;
+        }
+
+ /*
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+        .cf:before,
+        .cf:after {
+            content: " ";
+            /* 1 */
+            display: table;
+            /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        /**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+        .cf {
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" style="line-height:70px;">
+            header
+        </div>
+        <div class="content">
+            <div class="main" style="line-height:250px">
+                main
+            </div>
+            <div class="side">
+                <div class="aside" style="line-height:100px;">
+                    aside
+                </div>
+                <div class="nav cf" style="line-height:150px">
+                    nav
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="line-height:40px">
+            footer
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name:"viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latian1</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 40px;
+            font-size:15px;
+            font-family:sans-serif;
+            color:white;
+            text-align:center;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 500px;
+            border: 5px solid black;
+            box-sizing: border-box;
+            padding: 5px;
+            margin: 0px auto;
+        }
+
+        .header {
+            width: 100%;
+            height: 70px;
+            background-color: purple;
+        }
+        .content {
+            width: 100%;
+        }
+        
+        .footer {
+            width:100%;
+            height:40px;
+            background-color:black;
+        }
+        
+        .side div{
+            width:40%;
+        }
+
+        div.aside {
+           /* width: 40%;*/
+            height: 100px;
+            background-color: blue;
+        }
+
+        div.nav {
+           /* width: 40%;*/
+            height: 150px;
+            background-color: red;
+        }
+
+        div.main {
+            width: 60%;
+            height: 250px;
+            background-color: orange;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" style="line-height:70px;">header</div>
+        <div class="content">
+            <div class="main" style="line-height:250px">main</div>
+            <div class="side">
+                <div class="aside" style="line-height:100px;">aside</div>
+                <div class="nav" style="line-height:150px">nav</div>
+            </div>
+        </div>
+        <div class="footer" style="line-height:40px">footer</div>
+    </div>
+</body>
+</html>
